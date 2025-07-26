@@ -1,3 +1,4 @@
+package Easy;
 public class PalindromeNumber {
     public static void main(String[] args) {
         int x = 121;
