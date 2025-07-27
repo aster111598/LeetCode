@@ -20,6 +20,7 @@ public class ValidParenthese {
 
         Stack<Character> stack = new Stack<>();
 
+        // for(char ch : testBrackets.toCharArray())
         for (int i = 0; i < testBrackets.length(); i++) {
             char ch = testBrackets.charAt(i);
             if (ch == '(' || ch == '[' || ch == '{') {
@@ -38,10 +39,13 @@ public class ValidParenthese {
             }
         }
 
-        if (stack.isEmpty()) {
-            return true;
-        } else {
-            return false;
-        }
+        /*
+         * if (stack.isEmpty()) {
+         * return true;
+         * } else {
+         * return false;
+         * }
+         */
+        return stack.isEmpty();
     }
 }
